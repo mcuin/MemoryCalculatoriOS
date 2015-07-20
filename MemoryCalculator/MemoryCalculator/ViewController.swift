@@ -19,7 +19,30 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func add(a: Double, b: Double) {
+        
+        let c = a + b
+        
+    }
+    
+    func sub(a: Double, b: Double) {
+        
+        let c = a - b
+        
+    }
 
+    func mult(a: Double, b: Double) {
+        
+        let c = a * b
+        
+    }
+    
+    func div(a: Double, b: Double) {
+        
+        let c = a / b
+        
+    }
 
 }
 
