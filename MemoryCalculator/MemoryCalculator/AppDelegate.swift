@@ -40,6 +40,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func add(a: Double, b: Double) {
+        
+        let c = a + b
+        
+    }
+    
+    func sub(a: Double, b: Double) {
+        
+        let c = a - b
+        
+    }
+    
+    func mult(a: Double, b: Double) {
+        
+        let c = a * b
+        
+    }
+    
+    func div(a: Double, b: Double) {
+        
+        let c = a / b
+        
+    }
 
 
 }
