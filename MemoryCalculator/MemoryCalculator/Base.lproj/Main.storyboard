@@ -169,6 +169,33 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="Tst-VY-asM" id="ViY-0y-FO3"/>
+                        <outlet property="clearButton" destination="BdJ-1V-mwW" id="q1x-RZ-pI6"/>
+                        <outlet property="closeParenthesisButton" destination="1fk-yx-6s4" id="T7D-L8-s1E"/>
+                        <outlet property="decimalButton" destination="YIW-m6-p67" id="cTX-YZ-E0T"/>
+                        <outlet property="deleteButton" destination="Jjz-yC-noT" id="s7Z-R4-FyP"/>
+                        <outlet property="divideButton" destination="Syi-Eb-Nrr" id="kG4-3i-cz3"/>
+                        <outlet property="downArrow" destination="gae-Sw-lyf" id="arZ-IN-tn7"/>
+                        <outlet property="eightButton" destination="luv-OB-aO2" id="1bF-Kt-SYQ"/>
+                        <outlet property="equalsButton" destination="Knt-qL-jGb" id="Naq-FP-JHb"/>
+                        <outlet property="fiveButton" destination="T7n-4M-hoU" id="A99-92-PNh"/>
+                        <outlet property="fourButton" destination="lgM-gx-Adl" id="ieM-ME-WI1"/>
+                        <outlet property="multiplyButton" destination="OYH-cK-iuz" id="ORZ-Zh-uud"/>
+                        <outlet property="nineButton" destination="kUX-K4-U9J" id="rN8-sf-UGR"/>
+                        <outlet property="numberLabel" destination="Sdq-8n-iAl" id="Psi-lT-fS0"/>
+                        <outlet property="oneButton" destination="bjV-ZF-3Fi" id="XHS-L7-sH5"/>
+                        <outlet property="openParenthesisButton" destination="qGe-sR-Q9d" id="CkZ-81-Xzs"/>
+                        <outlet property="sevenButton" destination="I1H-SD-AXK" id="g1p-po-JnU"/>
+                        <outlet property="sixButton" destination="DFW-F3-g7t" id="SAO-8E-XDT"/>
+                        <outlet property="squareButton" destination="25G-eT-Tc9" id="rSi-Aa-8Wg"/>
+                        <outlet property="squareRootButton" destination="5Ow-hr-imv" id="FBU-i2-YmB"/>
+                        <outlet property="subtractButton" destination="EPv-Pw-0X2" id="4bj-37-WGz"/>
+                        <outlet property="threeButton" destination="c5b-eM-wD3" id="Hqd-cE-zyi"/>
+                        <outlet property="twoButton" destination="YbB-gv-OEk" id="LKl-7E-EpN"/>
+                        <outlet property="upArrow" destination="gae-Sw-lyf" id="777-MK-lcH"/>
+                        <outlet property="zeroButton" destination="O6b-Vo-H15" id="5gH-QU-Nz7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
