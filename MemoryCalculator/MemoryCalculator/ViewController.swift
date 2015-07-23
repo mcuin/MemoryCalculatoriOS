@@ -183,6 +183,24 @@ class ViewController: UIViewController {
             y = (parts[1] as NSString).doubleValue
             numberLabel.text? = ""
             numberLabel.text? = add(x, b: y)
+        } else if (numberLabel.text?.rangeOfString("-")) != nil {
+            parts = numberLabel.text!.componentsSeparatedByString("-")
+            x = (parts[0] as NSString).doubleValue
+            y = (parts[1] as NSString).doubleValue
+            numberLabel.text? = ""
+            numberLabel.text? = sub(x, b: y)
+        } else if (numberLabel.text?.rangeOfString("*")) != nil {
+            parts = numberLabel.text!.componentsSeparatedByString("*")
+            x = (parts[0] as NSString).doubleValue
+            y = (parts[1] as NSString).doubleValue
+            numberLabel.text? = ""
+            numberLabel.text? = mult(x, b: y)
+        } else if (numberLabel.text?.rangeOfString("/")) != nil {
+            parts = numberLabel.text!.componentsSeparatedByString("/")
+            x = (parts[0] as NSString).doubleValue
+            y = (parts[1] as NSString).doubleValue
+            numberLabel.text? = ""
+            numberLabel.text? = div(x, b: y)
         }
     }
 }
