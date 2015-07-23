@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Darwin
 
 class ViewController: UIViewController {
     
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
     @IBOutlet var zeroButton : UIButton!
     @IBOutlet var deleteButton : UIButton!
     @IBOutlet var squareRootButton : UIButton!
-    @IBOutlet var squareButton : UIButton!
+    @IBOutlet var exponentialButton : UIButton!
     var parts = [String]()
     var x: Double = 0.0, y: Double = 0.0
 
@@ -82,6 +83,19 @@ class ViewController: UIViewController {
         
         return answer
         
+    }
+    
+    func exponential(a: Double, b: Double) -> String {
+        
+        let c = pow(a, b)
+        var answer = "\(c)"
+        
+        return answer
+    }
+    
+    func sqRoot(a: Double, b: Double) -> String {
+        
+        let c = sqrt(a, b)
     }
     
     @IBAction func oneButtonClicked() {
@@ -152,7 +166,7 @@ class ViewController: UIViewController {
         numberLabel.text?.append("." as Character)
     }
     
-    @IBAction func squareButtonClicked() {
+    @IBAction func exponentialButtonClicked() {
         numberLabel.text?.append("^" as Character)
     }
     
@@ -201,6 +215,12 @@ class ViewController: UIViewController {
             y = (parts[1] as NSString).doubleValue
             numberLabel.text? = ""
             numberLabel.text? = div(x, b: y)
+        } else if (numberLabel.text?.rangeOfString("^")) != nil {
+            parts = numberLabel.text!.componentsSeparatedByString("^")
+            x = (parts[0] as NSString).doubleValue
+            y = (parts[1] as NSString).doubleValue
+            numberLabel.text? = ""
+            numberLabel.text? = exponential(x, b: y)
         }
     }
 }
