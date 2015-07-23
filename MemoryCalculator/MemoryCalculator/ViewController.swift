@@ -46,6 +46,100 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func oneButtonClicked() {
+        numberLabel.text?.append("1" as Character)
+    }
+    
+    @IBAction func twoButtonClicked() {
+        numberLabel.text?.append("2" as Character)
+    }
+    
+    @IBAction func threeButtonClicked() {
+        numberLabel.text?.append("3" as Character)
+    }
+    
+    @IBAction func fourButtonClicked() {
+        numberLabel.text?.append("4" as Character)
+    }
+    
+    @IBAction func fiveButtonClicked() {
+        numberLabel.text?.append("5" as Character)
+    }
 
+    @IBAction func sixButtonClicked() {
+        numberLabel.text?.append("6" as Character)
+    }
+    
+    @IBAction func sevenButtonClicked() {
+        numberLabel.text?.append("7" as Character)
+    }
+    
+    @IBAction func eightButtonClicked() {
+        numberLabel.text?.append("8" as Character)
+    }
+    
+    @IBAction func nineButtonClicked() {
+        numberLabel.text?.append("9" as Character)
+    }
+    
+    @IBAction func zeroButtonClicked() {
+        numberLabel.text?.append("0" as Character)
+    }
+    
+    @IBAction func upButtonClicked() {
+        
+    }
+    
+    @IBAction func downButtonClicked() {
+        
+    }
+    
+    @IBAction func clearButtonClicked() {
+        numberLabel.text? = ""
+    }
+    
+    @IBAction func deleteButtonClicked() {
+        
+    }
+    
+    @IBAction func openParenButtonClicked() {
+        numberLabel.text?.append("(" as Character)
+    }
+    
+    @IBAction func closeParenButtonClicked() {
+        numberLabel.text?.append(")" as Character)
+    }
+    
+    @IBAction func decimalButtonClicked() {
+        numberLabel.text?.append("." as Character)
+    }
+    
+    @IBAction func squareButtonClicked() {
+        numberLabel.text?.append("^" as Character)
+    }
+    
+    @IBAction func sqRootButtonClicked() {
+        
+    }
+    
+    @IBAction func divideButtonClicked() {
+        numberLabel.text?.append("/" as Character)
+    }
+    
+    @IBAction func multButtonClicked() {
+        numberLabel.text?.append("*" as Character)
+    }
+    
+    @IBAction func subButtonClikced() {
+        numberLabel.text?.append("-" as Character)
+    }
+    
+    @IBAction func addButtonClicked() {
+        numberLabel.text?.append("+" as Character)
+    }
+    
+    @IBAction func equalsButtonClicked() {
+        
+    }
 }
 
