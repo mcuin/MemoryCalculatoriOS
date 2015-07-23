@@ -35,6 +35,8 @@ class ViewController: UIViewController {
     @IBOutlet var deleteButton : UIButton!
     @IBOutlet var squareRootButton : UIButton!
     @IBOutlet var squareButton : UIButton!
+    var parts = [String]()
+    var x: Double = 0.0, y: Double = 0.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +46,42 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func add(a: Double, b: Double) -> String {
+        
+        var c = a + b
+        var answer = "\(c)"
+        
+        return answer
+        
+    }
+    
+    func sub(a: Double, b: Double) -> String {
+        
+        let c = a - b
+        var answer = "\(c)"
+        
+        return answer
+        
+    }
+    
+    func mult(a: Double, b: Double) -> String {
+        
+        let c = a * b
+        var answer = "\(c)"
+        
+        return answer
+        
+    }
+    
+    func div(a: Double, b: Double) ->String {
+        
+        let c = a / b
+        var answer = "\(c)"
+        
+        return answer
+        
     }
     
     @IBAction func oneButtonClicked() {
@@ -139,7 +177,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func equalsButtonClicked() {
-        
+        if (numberLabel.text?.rangeOfString("+")) != nil {
+            parts = numberLabel.text!.componentsSeparatedByString("+")
+            x = (parts[0] as NSString).doubleValue
+            y = (parts[1] as NSString).doubleValue
+            numberLabel.text? = ""
+            numberLabel.text? = add(x, b: y)
+        }
     }
 }
 
