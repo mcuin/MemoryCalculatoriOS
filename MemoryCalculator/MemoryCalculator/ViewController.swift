@@ -174,7 +174,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sqRootButtonClicked() {
-        
+        numberLabel.text?.append("√" as Character)
     }
     
     @IBAction func divideButtonClicked() {
@@ -226,7 +226,7 @@ class ViewController: UIViewController {
             numberLabel.text? = exponential(x, b: y)
         } else if (numberLabel.text?.rangeOfString("√")) != nil {
             parts = numberLabel.text!.componentsSeparatedByString("√")
-            x = (parts[0] as NSString).doubleValue
+            x = (parts[1] as NSString).doubleValue
             numberLabel.text? = ""
             numberLabel.text? = sqRoot(x)
         }
