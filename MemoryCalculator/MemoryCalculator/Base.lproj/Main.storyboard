@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -217,7 +217,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="squareButtonClicked" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tL5-oi-xAE"/>
+                                    <action selector="exponentialButtonClicked" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ySo-QP-WdW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjV-ZF-3Fi">
@@ -251,6 +251,7 @@
                         <outlet property="downArrow" destination="gae-Sw-lyf" id="arZ-IN-tn7"/>
                         <outlet property="eightButton" destination="luv-OB-aO2" id="1bF-Kt-SYQ"/>
                         <outlet property="equalsButton" destination="Knt-qL-jGb" id="Naq-FP-JHb"/>
+                        <outlet property="exponentialButton" destination="25G-eT-Tc9" id="mGP-hq-a1S"/>
                         <outlet property="fiveButton" destination="T7n-4M-hoU" id="A99-92-PNh"/>
                         <outlet property="fourButton" destination="lgM-gx-Adl" id="ieM-ME-WI1"/>
                         <outlet property="multiplyButton" destination="OYH-cK-iuz" id="ORZ-Zh-uud"/>
@@ -260,7 +261,6 @@
                         <outlet property="openParenthesisButton" destination="qGe-sR-Q9d" id="CkZ-81-Xzs"/>
                         <outlet property="sevenButton" destination="I1H-SD-AXK" id="g1p-po-JnU"/>
                         <outlet property="sixButton" destination="DFW-F3-g7t" id="SAO-8E-XDT"/>
-                        <outlet property="squareButton" destination="25G-eT-Tc9" id="rSi-Aa-8Wg"/>
                         <outlet property="squareRootButton" destination="5Ow-hr-imv" id="FBU-i2-YmB"/>
                         <outlet property="subtractButton" destination="EPv-Pw-0X2" id="4bj-37-WGz"/>
                         <outlet property="threeButton" destination="c5b-eM-wD3" id="Hqd-cE-zyi"/>

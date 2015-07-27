@@ -93,9 +93,12 @@ class ViewController: UIViewController {
         return answer
     }
     
-    func sqRoot(a: Double, b: Double) -> String {
+    func sqRoot(a: Double) -> String {
         
-        let c = sqrt(a, b)
+        let c = sqrt(a)
+        var answer = "\(c)"
+        
+        return answer
     }
     
     @IBAction func oneButtonClicked() {
@@ -221,6 +224,11 @@ class ViewController: UIViewController {
             y = (parts[1] as NSString).doubleValue
             numberLabel.text? = ""
             numberLabel.text? = exponential(x, b: y)
+        } else if (numberLabel.text?.rangeOfString("√")) != nil {
+            parts = numberLabel.text!.componentsSeparatedByString("√")
+            x = (parts[0] as NSString).doubleValue
+            numberLabel.text? = ""
+            numberLabel.text? = sqRoot(x)
         }
     }
 }
